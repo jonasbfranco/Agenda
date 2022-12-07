@@ -1,22 +1,26 @@
 const express = require('express')
+//  const routes = require('./routes');
 const cors = require('cors');
-const { Router } = require('express');
-const router = express.Router();
-
+const routes = express.Router();
 const app = express();
+// require('./config/dbConfig');
 
 
+// para nao ter problema em acessar a api de outro endereco
 app.use(cors());
+// para usar o response com json, se for send nao precisa desta linha abaixo.
 app.use(express.json());
-app.use(router)
+app.use(routes)
 
 
 app.get('/', function (req, res) {
-  res.send('Hello World')
+  return res.send('Hello World')
 })
 
-router.get('/teste', (req, res) => {
-  res.json({ message: 'Teste Rota Jonas' })
+routes.get('/teste', (req, res) => {
+  return res.json({ 
+    message: 'Teste Rota Jonas' 
+  })
 })
 
 

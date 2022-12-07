@@ -1,0 +1,74 @@
+{
+  "unidades": [
+    {
+      "id": 1,
+      "nome": "Vista Alegre"
+    },
+    {
+      "id": 2,
+      "nome": "Aporé"
+    }
+  ],
+  "contatos": [
+    {
+      "id": 1,
+      "nome": "Jonas Baptista Franco",
+      "ramal": "264",
+      "unidadeId": 1
+    },
+    {
+      "id": 2,
+      "nome": "Maicon Jose Melara",
+      "ramal": "263",
+      "unidadeId": 1
+    },
+    {
+      "id": 3,
+      "nome": "Willian Silva",
+      "ramal": "250",
+      "unidadeId": 1
+    },
+    {
+      "id": 4,
+      "nome": "Joao Vitor Matheus",
+      "ramal": "255",
+      "unidadeId": 1
+    },
+    {
+      "id": 5,
+      "nome": "Cassio Gabas",
+      "ramal": "245",
+      "unidadeId": 1
+    },
+    {
+      "id": 6,
+      "nome": "Jose Henrique",
+      "ramal": "231",
+      "unidadeId": 1
+    },
+    {
+      "id": 7,
+      "nome": "Wheslley Claudino",
+      "ramal": "222",
+      "unidadeId": 1
+    },
+    {
+      "id": 8,
+      "nome": "Lucas Gianini",
+      "ramal": "210",
+      "unidadeId": 1
+    },
+    {
+      "id": 9,
+      "nome": "Vitor Silva",
+      "ramal": "364",
+      "unidadeId": 2
+    },
+    {
+      "id": 10,
+      "nome": "Japones do Lanche",
+      "ramal": "333",
+      "unidadeId": 2
+    }
+  ]
+}
