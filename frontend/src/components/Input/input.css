@@ -1,0 +1,32 @@
+.Input {
+    height: 280px;
+    width: 100vw;
+    background: #1e7dea;
+}
+
+.Input p {
+    position: absolute;
+    top: -140px;
+    left: 30px;
+    font-size: 8rem;
+    color: #fff;
+    font-weight: 800;
+    /* letter-spacing: 5px; */
+}
+
+.Input input {
+    position: absolute;
+    top: 180px;
+    left: 30px;
+    border-radius: 10px;
+    width: 320px;
+    outline: none;
+    /* background: none; */
+    /* border: none; */
+    /* border-bottom: 1px solid #fff; */
+}
+
+.search {
+    padding: 10px;
+    font-size: 20px;
+}
