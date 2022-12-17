@@ -1,6 +1,23 @@
+import React, { useState, useEffect } from 'react';
+import api from '../../services/api';
+
 import './table.css';
 
-function Table({ data }) {
+
+function Table() {
+
+  const [ allContacts, setAllContacts ] = useState([])
+
+
+    useEffect(() => {
+        getAllContacts();  
+    }, []);
+      
+    async function getAllContacts() {
+      const response = await api.get(`/api/contatos/?_expand=unidade`,);
+      setAllContacts(response.data);
+    }
+
   return (
     <div className="Table">
         <table>
@@ -11,22 +28,13 @@ function Table({ data }) {
                     <th>Ramal</th>
                     <th>Unidade</th>
                 </tr>
-                <tr>
-                    {/* <td>Imagem</td> */}
-                    <td>Jonas Baptista Franco</td>
-                    <td>263</td>
-                    <td>Vista Alegre</td>
-
-                
-                {/* {data.map((item) => (
-                <tr className='tr_contatos' key={item.id}>
-                    <td>{item.id}</td>
-                    <td>{item.nome}</td>
-                    <td>{item.ramal}</td>
-                    <td>{item.unidade.nome}</td> */}
-
-                </tr>
-                {/* ))} */}
+                {allContacts.map((item) => (
+                    <tr key={item.id}>
+                        <td>{item.nome}</td>
+                        <td>{item.ramal}</td>
+                        <td>{item.unidade.nome}</td>
+                    </tr>    
+                ))}
             </tbody>
         </table>
     </div>

@@ -26,3 +26,21 @@ routes.get('/teste', (req, res) => {
 
 
 app.listen(3333, () => console.log('Express started at http://localhost:3333'))
+
+
+
+app.get("/", (req, res) => {
+  const { q } = req.query;
+
+  const keys = ["first_name", "last_name", "email"];
+
+  const search = (data) => {
+    return data.filter((item) =>
+      keys.some((key) => item[key].toLowerCase().includes(q))
+    );
+  };
+
+  q ? res.json(search(Users).slice(0, 10)) : res.json(Users.slice(0, 10));
+});
+
+app.listen(5000, () => console.log("API is working!"));

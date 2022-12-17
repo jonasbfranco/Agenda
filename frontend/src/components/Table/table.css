@@ -27,20 +27,18 @@ tr td:last-child { border-bottom-right-radius: 10px; }
 
 tr {
   height: 60px;
+  /* padding: 1rem 0; */
   box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.2);
 
 }
-  
+
 th, td {
   width: 250px;
-  /* text-align: center; */
-  /* border: 1px solid black; */
   padding: 15px;
   text-align: left;
-  font-size: 20px;
+  font-size: 18px;
   background: #fff;
-  /* border-radius: 10px; */
-}
+} 
 
 td img {
   width: 36px;
